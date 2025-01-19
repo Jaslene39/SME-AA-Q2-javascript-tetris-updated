@@ -12,7 +12,7 @@ COPY . .
 RUN npm install -g http-server
 
 # Step 5: Expose the port on which the server will run
-EXPOSE 8080
+EXPOSE 5000
 
 # Step 6: Define the command to serve the static files
-CMD ["http-server", ".", "-p", "8080"]
+CMD ["http-server", ".", "-p", "5000"]
